@@ -45,3 +45,85 @@
     align-items: center;
     justify-content: center;
 }
+
+.level-indicator {
+    display: inline-flex;
+    gap: 2px;
+    align-items: flex-end;
+    vertical-align: bottom;
+}
+
+.level-indicator span{
+    width:4px;
+    border-radius:2px;
+}
+
+.level-indicator span:nth-child(1){
+    height:10px;
+}
+
+.level-indicator span:nth-child(2){
+    height:14px;
+}
+
+.level-indicator span:nth-child(3){
+    height:18px;
+}
+
+.advanced span{
+    background: #7550fe;
+}
+
+.intermediate span{
+    background:#dee2e6;
+}
+
+.intermediate span:nth-child(1),
+.intermediate span:nth-child(2){
+    background:#7550fe;
+}
+
+.beginner span{
+    background:#dee2e6;
+}
+
+.beginner span:nth-child(1){
+    background:#754ffe;
+}
+
+#carouselReviews {
+    position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    border: rgb(218, 218, 218) solid 1px;
+    opacity: 1;
+    z-index: 10;
+}
+
+.carousel-control-prev { left: -18px; } 
+.carousel-control-next { right: -18px; }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+    width: 14px;
+    height: 14px;
+}
+
+#carousel .container {
+    overflow: visible;
+}
+
+@media (min-width: 992px) {
+    .carousel-control-prev { left: -45px; }
+    .carousel-control-next { right: -45px; }
+}
